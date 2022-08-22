@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  BleTest
+
+  Created by gbt on 2022/8/22.
+  
+*/
+"data" = "data";
+"Cancel" = "Cancel";
+"Confirm" = "Confirm";
+"Upgrade" = "Upgrade";
+
+
+"Voltage" = "Voltage";
+"Current" = "Current";
+"Power" = "Power";
+
+"NotEmpty" = "NotEmpty";
+"LengthExceedsLimit" = "LengthExceedsLimit";
+"Setting" = "Setting";
+"SetTimeout" = "SetTimeout";
+"SetSuccessfully" = "Set Successfully";
+"SettingFailed" = "SettingFailed";
+"UpgradeFirmware" = "Upgrade Firmware";
+"UpGrade Success" = "UpGrade Success";
+"UpGrade Failed" = "UpGrade Failed";
+"YourFirmwareIsUpToDate" = "Your Firmware Is UpToDate";
+
+"MoveTop" = "MoveTop";
+"Remove" = "Remove";
+"Upgrade" = "Upgrade";
+"Rename" = "Rename";
+
+"Calculator" = "Calculator";
+"Emittercell" = "Emittercell";
+"Chart" = "Chart";
+"Heart" = "Heart";

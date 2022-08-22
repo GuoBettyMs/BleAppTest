@@ -155,7 +155,39 @@
 		CF63E29928B37454005A9E63 /* WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF63E26A28B37454005A9E63 /* WKWebView.swift */; };
 		CF63E29A28B37454005A9E63 /* WKWebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF63E26B28B37454005A9E63 /* WKWebView.storyboard */; };
 		CF63E29D28B3749D005A9E63 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF63E29F28B3749D005A9E63 /* Localizable.strings */; };
+		CF63E2A728B396EB005A9E63 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF63E2A628B396EB005A9E63 /* WidgetKit.framework */; };
+		CF63E2A928B396EB005A9E63 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF63E2A828B396EB005A9E63 /* SwiftUI.framework */; };
+		CF63E2AC28B396EB005A9E63 /* RecordBookWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF63E2AB28B396EB005A9E63 /* RecordBookWidgets.swift */; };
+		CF63E2AF28B396ED005A9E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF63E2AE28B396ED005A9E63 /* Assets.xcassets */; };
+		CF63E2B128B396ED005A9E63 /* RecordBookWidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF63E2AD28B396EB005A9E63 /* RecordBookWidgets.intentdefinition */; };
+		CF63E2B228B396ED005A9E63 /* RecordBookWidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF63E2AD28B396EB005A9E63 /* RecordBookWidgets.intentdefinition */; };
+		CF63E2B528B396ED005A9E63 /* RecordBookWidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF63E2A528B396EB005A9E63 /* RecordBookWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF63E2BC28B397B7005A9E63 /* shouye.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF63E2BB28B397B7005A9E63 /* shouye.jpeg */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF63E2B328B396ED005A9E63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF63E12428B372E5005A9E63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF63E2A428B396EB005A9E63;
+			remoteInfo = RecordBookWidgetsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF63E2B628B396ED005A9E63 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CF63E2B528B396ED005A9E63 /* RecordBookWidgetsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D8D8CB047A90C480B9BD26A /* Pods_BleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -310,6 +342,14 @@
 		CF63E26B28B37454005A9E63 /* WKWebView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WKWebView.storyboard; sourceTree = "<group>"; };
 		CF63E29E28B3749D005A9E63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF63E2A028B374A1005A9E63 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CF63E2A528B396EB005A9E63 /* RecordBookWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RecordBookWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF63E2A628B396EB005A9E63 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CF63E2A828B396EB005A9E63 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CF63E2AB28B396EB005A9E63 /* RecordBookWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordBookWidgets.swift; sourceTree = "<group>"; };
+		CF63E2AD28B396EB005A9E63 /* RecordBookWidgets.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = RecordBookWidgets.intentdefinition; sourceTree = "<group>"; };
+		CF63E2AE28B396ED005A9E63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF63E2B028B396ED005A9E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF63E2BB28B397B7005A9E63 /* shouye.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shouye.jpeg; sourceTree = "<group>"; };
 		F26F6EFBB1A8C3619A474085 /* Pods-BleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleTest.debug.xcconfig"; path = "Target Support Files/Pods-BleTest/Pods-BleTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -322,6 +362,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF63E2A228B396EB005A9E63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF63E2A928B396EB005A9E63 /* SwiftUI.framework in Frameworks */,
+				CF63E2A728B396EB005A9E63 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -329,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				CF63E12E28B372E5005A9E63 /* BleTest */,
+				CF63E2AA28B396EB005A9E63 /* RecordBookWidgets */,
 				CF63E12D28B372E5005A9E63 /* Products */,
 				E5B0F0E4CEFBA12573901344 /* Pods */,
 				F849A476A30F2608CB4B599F /* Frameworks */,
@@ -339,6 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				CF63E12C28B372E5005A9E63 /* BleTest.app */,
+				CF63E2A528B396EB005A9E63 /* RecordBookWidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -346,11 +397,12 @@
 		CF63E12E28B372E5005A9E63 /* BleTest */ = {
 			isa = PBXGroup;
 			children = (
-				CF63E22228B3743C005A9E63 /* Device */,
+				CF63E2BA28B3979D005A9E63 /* Screenshot */,
 				CF63E17728B3742D005A9E63 /* BLE */,
 				CF63E1C828B3742E005A9E63 /* Database */,
 				CF63E1CB28B3742E005A9E63 /* Network */,
 				CF63E1A528B3742E005A9E63 /* Other */,
+				CF63E22228B3743C005A9E63 /* Device */,
 				CF63E14528B373FD005A9E63 /* Main */,
 				CF63E12F28B372E5005A9E63 /* AppDelegate.swift */,
 				CF63E13128B372E5005A9E63 /* SceneDelegate.swift */,
@@ -930,6 +982,25 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		CF63E2AA28B396EB005A9E63 /* RecordBookWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				CF63E2AB28B396EB005A9E63 /* RecordBookWidgets.swift */,
+				CF63E2AD28B396EB005A9E63 /* RecordBookWidgets.intentdefinition */,
+				CF63E2AE28B396ED005A9E63 /* Assets.xcassets */,
+				CF63E2B028B396ED005A9E63 /* Info.plist */,
+			);
+			path = RecordBookWidgets;
+			sourceTree = "<group>";
+		};
+		CF63E2BA28B3979D005A9E63 /* Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				CF63E2BB28B397B7005A9E63 /* shouye.jpeg */,
+			);
+			path = Screenshot;
+			sourceTree = "<group>";
+		};
 		E5B0F0E4CEFBA12573901344 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -943,6 +1014,8 @@
 			isa = PBXGroup;
 			children = (
 				1D8D8CB047A90C480B9BD26A /* Pods_BleTest.framework */,
+				CF63E2A628B396EB005A9E63 /* WidgetKit.framework */,
+				CF63E2A828B396EB005A9E63 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -959,15 +1032,34 @@
 				CF63E12928B372E5005A9E63 /* Frameworks */,
 				CF63E12A28B372E5005A9E63 /* Resources */,
 				7234B438690C9CAFA018A655 /* [CP] Embed Pods Frameworks */,
+				CF63E2B628B396ED005A9E63 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CF63E2B428B396ED005A9E63 /* PBXTargetDependency */,
 			);
 			name = BleTest;
 			productName = BleTest;
 			productReference = CF63E12C28B372E5005A9E63 /* BleTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CF63E2A428B396EB005A9E63 /* RecordBookWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF63E2B928B396ED005A9E63 /* Build configuration list for PBXNativeTarget "RecordBookWidgetsExtension" */;
+			buildPhases = (
+				CF63E2A128B396EB005A9E63 /* Sources */,
+				CF63E2A228B396EB005A9E63 /* Frameworks */,
+				CF63E2A328B396EB005A9E63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecordBookWidgetsExtension;
+			productName = RecordBookWidgetsExtension;
+			productReference = CF63E2A528B396EB005A9E63 /* RecordBookWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -980,6 +1072,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					CF63E12B28B372E5005A9E63 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					CF63E2A428B396EB005A9E63 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -999,6 +1094,7 @@
 			projectRoot = "";
 			targets = (
 				CF63E12B28B372E5005A9E63 /* BleTest */,
+				CF63E2A428B396EB005A9E63 /* RecordBookWidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -1018,6 +1114,7 @@
 				CF63E13C28B372E6005A9E63 /* LaunchScreen.storyboard in Resources */,
 				CF63E17628B3740F005A9E63 /* Taylor Swift-《Love Story》.mp3 in Resources */,
 				CF63E21028B3742F005A9E63 /* Ubuntu-LI.ttf in Resources */,
+				CF63E2BC28B397B7005A9E63 /* shouye.jpeg in Resources */,
 				CF63E21528B3742F005A9E63 /* Ubuntu-RI.ttf in Resources */,
 				CF63E16E28B373FD005A9E63 /* TestTableViewCell.xib in Resources */,
 				CF63E20B28B3742F005A9E63 /* UbuntuMono-BI.ttf in Resources */,
@@ -1044,6 +1141,14 @@
 				CF63E21328B3742F005A9E63 /* UbuntuMono-RI.ttf in Resources */,
 				CF63E21628B3742F005A9E63 /* UbuntuMono-B.ttf in Resources */,
 				CF63E29728B37454005A9E63 /* HomePage.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF63E2A328B396EB005A9E63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF63E2AF28B396ED005A9E63 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1156,6 +1261,7 @@
 				CF63E27228B37454005A9E63 /* EditNoteListVC.swift in Sources */,
 				CF63E21F28B3742F005A9E63 /* BleUpgradeHandle.swift in Sources */,
 				CF63E1FD28B3742F005A9E63 /* GetCurrentLanguage.swift in Sources */,
+				CF63E2B228B396ED005A9E63 /* RecordBookWidgets.intentdefinition in Sources */,
 				CF63E26D28B37454005A9E63 /* RecordModel.swift in Sources */,
 				CF63E29828B37454005A9E63 /* WKWebViewVC.swift in Sources */,
 				CF63E1D828B3742E005A9E63 /* ScanPacketAnalysis.swift in Sources */,
@@ -1210,7 +1316,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF63E2A128B396EB005A9E63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF63E2B128B396ED005A9E63 /* RecordBookWidgets.intentdefinition in Sources */,
+				CF63E2AC28B396EB005A9E63 /* RecordBookWidgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF63E2B428B396ED005A9E63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF63E2A428B396EB005A9E63 /* RecordBookWidgetsExtension */;
+			targetProxy = CF63E2B328B396ED005A9E63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CF63E13A28B372E6005A9E63 /* LaunchScreen.storyboard */ = {
@@ -1361,6 +1484,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F26F6EFBB1A8C3619A474085 /* Pods-BleTest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1390,6 +1514,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BCD6D775F265D5AA071259A /* Pods-BleTest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1415,6 +1540,62 @@
 			};
 			name = Release;
 		};
+		CF63E2B728B396ED005A9E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3U6PNS756;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecordBookWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RecordBookWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.BleTest.RecordBookWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF63E2B828B396ED005A9E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3U6PNS756;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecordBookWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RecordBookWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.BleTest.RecordBookWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1432,6 +1613,15 @@
 			buildConfigurations = (
 				CF63E14128B372E6005A9E63 /* Debug */,
 				CF63E14228B372E6005A9E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF63E2B928B396ED005A9E63 /* Build configuration list for PBXNativeTarget "RecordBookWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF63E2B728B396ED005A9E63 /* Debug */,
+				CF63E2B828B396ED005A9E63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
