@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--calcutorStoryboard-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CalculatorViewControllerID" title="calcutorStoryboard" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="CalculatorViewController" customModule="IOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="CalculatorView" customModule="IOSApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3t-R1-ZMf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o3t-R1-ZMf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1B0-M9-2IY"/>
+                            <constraint firstItem="o3t-R1-ZMf" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="LCd-H2-KKE"/>
+                            <constraint firstItem="o3t-R1-ZMf" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="g0V-oJ-qUY"/>
+                            <constraint firstItem="o3t-R1-ZMf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="zC2-nb-wHv"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="InfoView" destination="o3t-R1-ZMf" id="fYP-hD-yIc"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="OOe-0X-3FS">
+                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="2oo-xA-dSR">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ikl-ry-cas">
+                                <rect key="frame" x="20" y="2" width="78" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back" image="chevron.left" catalog="system">
+                                    <color key="titleColor" systemColor="tintColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PRO-pH-Yig"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="BackAction:" destination="Y6W-OH-hqX" id="H4K-Zm-Oun"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="51.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tVM-Hz-Xnx">
+            <objects>
+                <navigationController id="Vtg-4T-25F" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lAu-o1-m4g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="mEz-F3-ASe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1uC-gJ-JaA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

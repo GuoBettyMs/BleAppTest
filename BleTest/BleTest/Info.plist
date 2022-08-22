@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>BleTest needs Bluetooth scanning to connect to the Bluetooth smart device to obtain data.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>BleTest needs Bluetooth scanning to connect to the Bluetooth smart device to obtain data.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>HarmonyOS_Sans_Condensed_Black</string>
+		<string>HarmonyOS_Sans_Condensed_Bold</string>
+		<string>HarmonyOS_Sans_Condensed_Medium</string>
+		<string>HarmonyOS_Sans_Condensed_Light</string>
+		<string>HarmonyOS_Sans_Condensed_Thin</string>
+		<string>HarmonyOS_Sans_Condensed</string>
+		<string>UbuntuMono-Bold</string>
+		<string>UbuntuMono-BoldItalic</string>
+		<string>UbuntuMono-Italic</string>
+		<string>UbuntuMono-Regular</string>
+		<string>UbuntuCondensed-Regular</string>
+		<string>Ubuntu-BoldItalic</string>
+		<string>Ubuntu-Bold</string>
+		<string>Ubuntu-MediumItalic</string>
+		<string>Ubuntu-Medium</string>
+		<string>Ubuntu-LightItalic</string>
+		<string>Ubuntu-Light</string>
+		<string>Ubuntu-Thin</string>
+		<string>Ubuntu-Italic</string>
+		<string>Ubuntu</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-peripheral</string>
+		<string>bluetooth-central</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

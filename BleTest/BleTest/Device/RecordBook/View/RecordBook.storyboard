@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Record BookVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="RecordBookVCID" id="Y6W-OH-hqX" customClass="RecordBookVC" customModule="IOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="RecordBookView" customModule="IOSApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="T2W-4J-r22">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMm-2O-IWe" customClass="RecordBookView" customModule="IOSApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T2W-4J-r22" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="CVj-sM-2q2"/>
+                            <constraint firstItem="HMm-2O-IWe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qeo-Gq-y9E"/>
+                            <constraint firstItem="T2W-4J-r22" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XaF-8p-NPb"/>
+                            <constraint firstAttribute="bottom" secondItem="HMm-2O-IWe" secondAttribute="bottom" id="Xnc-tf-nfQ"/>
+                            <constraint firstItem="T2W-4J-r22" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="iKI-RC-mn8"/>
+                            <constraint firstAttribute="bottom" secondItem="T2W-4J-r22" secondAttribute="bottom" id="jEX-91-His"/>
+                            <constraint firstItem="HMm-2O-IWe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="msI-ja-e3K"/>
+                            <constraint firstItem="HMm-2O-IWe" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="poz-SO-ieT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cjW-im-3Jr">
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" id="Bez-L7-lVr">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="i4S-4A-Wvh">
+                                    <rect key="frame" x="364" y="7" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="plus" catalog="system"/>
+                                    <connections>
+                                        <action selector="addGroup:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="drI-V2-G6P"/>
+                                    </connections>
+                                </button>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="KSm-L9-2Hr">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="YSP-16-7yu">
+                                    <rect key="frame" x="264" y="6.5" width="92" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="音效：关"/>
+                                    <connections>
+                                        <action selector="musicPlayer:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pGe-XY-zIm"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="musicButton" destination="YSP-16-7yu" id="WuB-sN-vN6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.623188405797109" y="73.660714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DaZ-uX-pdu">
+            <objects>
+                <navigationController id="BDB-np-K81" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="35Q-it-jSR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="CellLColor"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="r4P-Xb-diU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fia-Nm-xwD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-751" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2" width="800" height="500"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="CellLColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

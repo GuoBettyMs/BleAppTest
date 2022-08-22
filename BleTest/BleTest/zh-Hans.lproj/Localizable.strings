@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  BleTest
+
+  Created by gbt on 2022/8/22.
+  
+*/
+"data" = "数据";
+"Cancel" = "取消";
+"Confirm" = "确认";
+"Upgrade" = "升级";
+
+"Voltage" = "电压";
+"Current" = "电流";
+"Power" = "功率";
+
+"NotEmpty" = "不能为空";
+"LengthExceedsLimit" = "长度限制";
+"Setting" = "设置中";
+"SetTimeout" = "超过设置时间";
+"SetSuccessfully" = "设置成功";
+"SettingFailed" = "设置失败";
+"UpgradeFirmware" = "升级硬件";
+"UpGrade Success" = "升级成功";
+"UpGrade Failed" = "升级失败";
+"YourFirmwareIsUpToDate" = "你的硬件是最新的";
+
+
+"MoveTop" = "置顶";
+"Remove" = "移除";
+"Upgrade" = "升级";
+"Rename" = "改名";
+
+"Calculator" = "计算器";
+"Emittercell" = "粒子";
+"Chart" = "线性图";
+"Heart" = "心率监测仪中心设备";
