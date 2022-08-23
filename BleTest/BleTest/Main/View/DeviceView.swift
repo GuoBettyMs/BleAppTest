@@ -114,9 +114,9 @@ class DeviceView: UIView, UICollectionViewDataSource, UICollectionViewDelegate, 
             let sb = UIStoryboard(name: "BLEViewControllerStoryboard", bundle: nil)
             let destination = sb.instantiateViewController(withIdentifier: "BLEViewControllerID") as! BLEViewController
             rootViewController = UINavigationController(rootViewController: destination)
-//        case "jsonPasing":
-//            let destination =  JsonPasingViewController()
-//            rootViewController = UINavigationController(rootViewController: destination)
+        case "jsonPasing":
+            let destination =  JsonPasingViewController()
+            rootViewController = UINavigationController(rootViewController: destination)
         case "MenuTable":
             let sb = UIStoryboard(name: "MenuMainTableView", bundle: nil)
             let destination = sb.instantiateViewController(withIdentifier: "MenuTableVCID") as! MenuTableVC

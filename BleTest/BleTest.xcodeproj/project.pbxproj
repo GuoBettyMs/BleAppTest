@@ -163,6 +163,11 @@
 		CF63E2B228B396ED005A9E63 /* RecordBookWidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CF63E2AD28B396EB005A9E63 /* RecordBookWidgets.intentdefinition */; };
 		CF63E2B528B396ED005A9E63 /* RecordBookWidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF63E2A528B396EB005A9E63 /* RecordBookWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF63E2BC28B397B7005A9E63 /* shouye.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF63E2BB28B397B7005A9E63 /* shouye.jpeg */; };
+		CFFB78BC28B4616000A1FD3D /* JsonPasingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB78BB28B4616000A1FD3D /* JsonPasingViewController.swift */; };
+		CFFB78BE28B461AD00A1FD3D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB78BD28B461AD00A1FD3D /* TableViewCell.swift */; };
+		CFFB78C028B461E900A1FD3D /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB78BF28B461E900A1FD3D /* Course.swift */; };
+		CFFB78C228B462A800A1FD3D /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = CFFB78C128B462A800A1FD3D /* courses.json */; };
+		CFFB78C628B4644800A1FD3D /* AnalyticalJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB78C528B4644800A1FD3D /* AnalyticalJsonData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -350,6 +355,11 @@
 		CF63E2AE28B396ED005A9E63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF63E2B028B396ED005A9E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF63E2BB28B397B7005A9E63 /* shouye.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shouye.jpeg; sourceTree = "<group>"; };
+		CFFB78BB28B4616000A1FD3D /* JsonPasingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonPasingViewController.swift; sourceTree = "<group>"; };
+		CFFB78BD28B461AD00A1FD3D /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CFFB78BF28B461E900A1FD3D /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		CFFB78C128B462A800A1FD3D /* courses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = courses.json; sourceTree = "<group>"; };
+		CFFB78C528B4644800A1FD3D /* AnalyticalJsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticalJsonData.swift; sourceTree = "<group>"; };
 		F26F6EFBB1A8C3619A474085 /* Pods-BleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleTest.debug.xcconfig"; path = "Target Support Files/Pods-BleTest/Pods-BleTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -723,6 +733,7 @@
 		CF63E22228B3743C005A9E63 /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				CFFB78B728B460DE00A1FD3D /* JsonPasing */,
 				CF63E25528B37453005A9E63 /* BLE(IOSPeripheral&central) */,
 				CF63E23B28B37453005A9E63 /* BluetoothTest（IOSCentralManager） */,
 				CF63E25C28B37454005A9E63 /* CAEmitterLayerTest */,
@@ -1001,6 +1012,42 @@
 			path = Screenshot;
 			sourceTree = "<group>";
 		};
+		CFFB78B728B460DE00A1FD3D /* JsonPasing */ = {
+			isa = PBXGroup;
+			children = (
+				CFFB78C528B4644800A1FD3D /* AnalyticalJsonData.swift */,
+				CFFB78C128B462A800A1FD3D /* courses.json */,
+				CFFB78BA28B460FD00A1FD3D /* Model */,
+				CFFB78B928B460F100A1FD3D /* ViewController */,
+				CFFB78B828B460ED00A1FD3D /* ViewCell */,
+			);
+			path = JsonPasing;
+			sourceTree = "<group>";
+		};
+		CFFB78B828B460ED00A1FD3D /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CFFB78BD28B461AD00A1FD3D /* TableViewCell.swift */,
+			);
+			path = ViewCell;
+			sourceTree = "<group>";
+		};
+		CFFB78B928B460F100A1FD3D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFFB78BB28B4616000A1FD3D /* JsonPasingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CFFB78BA28B460FD00A1FD3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFFB78BF28B461E900A1FD3D /* Course.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E5B0F0E4CEFBA12573901344 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1132,6 +1179,7 @@
 				CF63E21128B3742F005A9E63 /* Ubuntu-B.ttf in Resources */,
 				CF63E17128B373FD005A9E63 /* TestTableView.xib in Resources */,
 				CF63E28D28B37454005A9E63 /* BLEViewControllerStoryboard.storyboard in Resources */,
+				CFFB78C228B462A800A1FD3D /* courses.json in Resources */,
 				CF63E17428B373FD005A9E63 /* DeviceView.xib in Resources */,
 				CF63E16C28B373FD005A9E63 /* DeviceCollectionViewCell.xib in Resources */,
 				CF63E28E28B37454005A9E63 /* BLEcentralStoryboard.storyboard in Resources */,
@@ -1223,6 +1271,7 @@
 				CF63E16328B373FD005A9E63 /* ProductType.swift in Sources */,
 				CF63E1DF28B3742F005A9E63 /* BleIdler.swift in Sources */,
 				CF63E28A28B37454005A9E63 /* ScreenView.swift in Sources */,
+				CFFB78C028B461E900A1FD3D /* Course.swift in Sources */,
 				CF63E16928B373FD005A9E63 /* DeviceFlowLayout.swift in Sources */,
 				CF63E21C28B3742F005A9E63 /* UpgradeHandle.swift in Sources */,
 				CF63E27028B37454005A9E63 /* RecordBookView.swift in Sources */,
@@ -1235,11 +1284,13 @@
 				CF63E1D928B3742E005A9E63 /* MyBluetoothDevice.swift in Sources */,
 				CF63E16628B373FD005A9E63 /* Settings.swift in Sources */,
 				CF63E16428B373FD005A9E63 /* UDKeys.swift in Sources */,
+				CFFB78BC28B4616000A1FD3D /* JsonPasingViewController.swift in Sources */,
 				CF63E29128B37454005A9E63 /* GiveALikeView.swift in Sources */,
 				CF63E1F328B3742F005A9E63 /* AlarmToneResp.swift in Sources */,
 				CF63E27F28B37454005A9E63 /* MenuHeader.swift in Sources */,
 				CF63E1E328B3742F005A9E63 /* OTAChecksumResp.swift in Sources */,
 				CF63E28828B37454005A9E63 /* BoardView.swift in Sources */,
+				CFFB78C628B4644800A1FD3D /* AnalyticalJsonData.swift in Sources */,
 				CF63E27A28B37454005A9E63 /* AAInfographicsViewController.swift in Sources */,
 				CF63E28528B37454005A9E63 /* CalculatorViewController.swift in Sources */,
 				CF63E1F628B3742F005A9E63 /* IRResp.swift in Sources */,
@@ -1299,6 +1350,7 @@
 				CF63E21828B3742F005A9E63 /* RecordBookDataManager.swift in Sources */,
 				CF63E1EB28B3742F005A9E63 /* BindingResponse.swift in Sources */,
 				CF63E20528B3742F005A9E63 /* DataProcessing.swift in Sources */,
+				CFFB78BE28B461AD00A1FD3D /* TableViewCell.swift in Sources */,
 				CF63E29628B37454005A9E63 /* RedpacketRainView.swift in Sources */,
 				CF63E28128B37454005A9E63 /* MenuTableView.swift in Sources */,
 				CF63E21728B3742F005A9E63 /* BaseobjectViewController.swift in Sources */,

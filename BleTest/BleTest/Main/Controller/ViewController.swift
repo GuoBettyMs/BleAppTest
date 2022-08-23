@@ -38,10 +38,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         //数据库增加App，type 为视图名称，identifier为视图控制器名称
-        let RecordBookVC = AppIconModel(type: "RecordBook", titlename: "RecordBook", identifier: "RecordBook", peripheral: nil, product: Product.types(""), broadcastPacketAnalysis:  BroadcastPacketAnalysis.init(bytes: nil), scanPacketAnalysis: ScanPacketAnalysis.init(dataString: ""), offlineBool: false, visitime: "", detail: "", searchtime: "")
+        let jsonPasingVC = AppIconModel(type: "jsonPasing", titlename: "jsonPasing", identifier: "jsonPasing", peripheral: nil, product: Product.types(""), broadcastPacketAnalysis:  BroadcastPacketAnalysis.init(bytes: nil), scanPacketAnalysis: ScanPacketAnalysis.init(dataString: ""), offlineBool: false, visitime: "", detail: "", searchtime: "")
         
-//        scanDbManager.insert(scanDbModel: aAInfographicsVC)
-//        scanDbManager.insert(scanDbModel: RecordBookVC)
+//        scanDbManager.insert(scanDbModel: jsonPasingVC)
         
 //        scanDbManager.delete(identifiers: "WKWebView")          //删除 identifier
 
