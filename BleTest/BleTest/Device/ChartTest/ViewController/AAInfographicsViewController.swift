@@ -6,7 +6,7 @@
 //
 /*
     为了使系统自带的十字架校准线无法去除，需更改第三方库以下文件
- AAOptions\ AATooltip\ AAStyle\ AASeriesElement\ AAChartModel\ AAChartView\ AAAxis
+ AAChart\ AAOptions\ AATooltip\ AAStyle\ AASeriesElement\ AAChartModel\ AAChartView\ AAAxis
  \AADataLabels \AALabels
  文件夹 Resources -> AAJSFiles: AAChartView\ AAeasing\ AAFunnel\ AAhighcharts\ AAHighchartsMore\ AARounded-Corners
  
