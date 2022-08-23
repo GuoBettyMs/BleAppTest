@@ -22,7 +22,7 @@
  * -------------------------------------------------------------------------------
  * And if you want to contribute for this project, please contact me as well
  * GitHub        : https://github.com/AAChartModel
- * StackOverflow : https://stackoverflow.com/users/7842508/codeforu
+ * StackOverflow : https://stackoverflow.com/users/12302132/codeforu
  * JianShu       : https://www.jianshu.com/u/f1e6753d4254
  * SegmentFault  : https://segmentfault.com/u/huanghunbieguan
  *
@@ -30,7 +30,7 @@
  
  */
 
-import Foundation 
+import Foundation
 
 public class AATooltip: AAObject {
     public var backgroundColor: String?
@@ -46,13 +46,13 @@ public class AATooltip: AAObject {
     public var footerFormat: String?
     public var valueDecimals: Int?
     public var shared: Bool?
-    public var crosshairs: Bool?
     public var valueSuffix: String?
     public var followTouchMove: Bool?//https://api.highcharts.com.cn/highcharts#chart.panning
     public var shadow: Bool?
     public var padding: Float?
+    public var pointFormatter: String?
     public var positioner: String?
-        
+    public var dateTimeLabelFormats: AADateTimeLabelFormats?
     
     @discardableResult
     public func backgroundColor(_ prop: String?) -> AATooltip {
@@ -133,12 +133,6 @@ public class AATooltip: AAObject {
     }
     
     @discardableResult
-    public func crosshairs(_ prop: Bool?) -> AATooltip {
-        crosshairs = prop
-        return self
-    }
-    
-    @discardableResult
     public func valueSuffix(_ prop: String?) -> AATooltip {
         valueSuffix = prop
         return self
@@ -163,14 +157,25 @@ public class AATooltip: AAObject {
     }
     
     @discardableResult
+    public func pointFormatter(_ prop: String) -> AATooltip {
+        pointFormatter = prop.aa_toPureJSString()
+        return self
+    }
+    
+    @discardableResult
     public func positioner(_ prop: String) -> AATooltip {
         positioner = prop.aa_toPureJSString()
+        return self
+    }
+    
+    @discardableResult
+    public func dateTimeLabelFormats(_ prop: AADateTimeLabelFormats?) -> AATooltip {
+        dateTimeLabelFormats = prop
         return self
     }
     
     public override init() {
         enabled = true
         shared = true
-        crosshairs = true
     }
 }

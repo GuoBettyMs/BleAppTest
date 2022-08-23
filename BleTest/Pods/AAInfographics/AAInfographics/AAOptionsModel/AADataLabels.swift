@@ -22,7 +22,7 @@
  * -------------------------------------------------------------------------------
  * And if you want to contribute for this project, please contact me as well
  * GitHub        : https://github.com/AAChartModel
- * StackOverflow : https://stackoverflow.com/users/7842508/codeforu
+ * StackOverflow : https://stackoverflow.com/users/12302132/codeforu
  * JianShu       : https://www.jianshu.com/u/f1e6753d4254
  * SegmentFault  : https://segmentfault.com/u/huanghunbieguan
  *
@@ -54,7 +54,16 @@ public class AADataLabels: AAObject {
     public var crop: Bool?
     public var inside: Bool?
     public var overflow: String?
-    
+    public var softConnector: Bool?
+    public var textPath: [String: Any]?
+    public var filter: [String: Any]?
+    public var connectorColor: String?
+    public var connectorPadding: Float?
+    public var connectorShape: String?
+    public var connectorWidth: Float?
+    public var crookDistance: String?
+    public var alignTo: String?
+
     @discardableResult
     public func enabled(_ prop: Bool?) -> AADataLabels {
         enabled = prop
@@ -183,66 +192,63 @@ public class AADataLabels: AAObject {
         return self
     }
     
+    @discardableResult
+    public func softConnector(_ prop: Bool?) -> AADataLabels {
+        softConnector = prop
+        return self
+    }
+    
+    @discardableResult
+    public func textPath(_ prop: [String: Any]?) -> AADataLabels {
+        textPath = prop
+        return self
+    }
+    
+    @discardableResult
+    public func filter(_ prop: [String: Any]?) -> AADataLabels {
+        filter = prop
+        return self
+    }
+    
+    @discardableResult
+    public func connectorColor(_ prop: String?) -> AADataLabels {
+        connectorColor = prop
+        return self
+    }
+    
+    @discardableResult
+    public func connectorPadding(_ prop: Float?) -> AADataLabels {
+        connectorPadding = prop
+        return self
+    }
+    
+    @discardableResult
+    public func connectorShape(_ prop: String?) -> AADataLabels {
+        connectorShape = prop
+        return self
+    }
+    
+    @discardableResult
+    public func connectorWidth(_ prop: Float?) -> AADataLabels {
+        connectorWidth = prop
+        return self
+    }
+    
+    @discardableResult
+    public func crookDistance(_ prop: String?) -> AADataLabels {
+        crookDistance = prop
+        return self
+    }
+    
+    @discardableResult
+    public func alignTo(_ prop: String?) -> AADataLabels {
+        alignTo = prop
+        return self
+    }
+
     public override init() {
         enabled = true
     }
 }
 
-public class AAStyle: AAObject {
-    public var color: String?
-    public var fontSize: String?
-    public var fontWeight: String?
-    public var textOutline: String?
-    
-    @discardableResult
-    public func color(_ prop: String?) -> AAStyle {
-        color = prop
-        return self
-    }
-    
-    @discardableResult
-    public func fontSize(_ prop: Float?) -> AAStyle {
-        if prop != nil {
-            fontSize = "\(prop!)px"
-        }
-        return self
-    }
-    
-    @discardableResult
-    public func fontWeight(_ prop: AAChartFontWeightType?) -> AAStyle {
-        fontWeight = prop?.rawValue
-        return self
-    }
-    
-    @discardableResult
-    public func textOutline(_ prop: String?) -> AAStyle {
-        textOutline = prop
-        return self
-    }
-    
-    public override init() {
-        
-    }
-}
 
-public extension AAStyle {
-    convenience init(color : String?) {
-        self.init(color: color, fontSize: nil)
-    }
-    
-    convenience init(color : String?, fontSize: Float?) {
-        self.init(color: color, fontSize: fontSize,weight: nil)
-    }
-    
-    convenience init(color : String?, fontSize: Float?, weight: AAChartFontWeightType?) {
-      self.init(color: color, fontSize: fontSize,weight: weight, outline: nil)
-    }
-    
-    convenience init(color : String?, fontSize: Float?, weight: AAChartFontWeightType?, outline: String?) {
-        self.init()
-        self.color(color)
-        .fontSize(fontSize)
-        .fontWeight(weight)
-        .textOutline(outline)
-    }
-}

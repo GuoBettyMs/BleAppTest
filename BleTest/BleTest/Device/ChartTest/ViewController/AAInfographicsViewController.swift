@@ -5,7 +5,10 @@
 //  Created by isdt on 2022/3/28.
 //
 /*
-    chartType.tooltipEnabled(false)  系统自带的十字架校准线无法去除
+    为了使系统自带的十字架校准线无法去除，需更改第三方库以下文件
+ AAOptions\ AATooltip\ AAStyle\ AASeriesElement\ AAChartModel\ AAChartView\ AAAxis
+ \AADataLabels \AALabels
+ 文件夹 Resources -> AAJSFiles: AAChartView\ AAeasing\ AAFunnel\ AAhighcharts\ AAHighchartsMore\ AARounded-Corners
  
  */
 
@@ -186,7 +189,6 @@ class AAInfographicsViewController:  BaseobjectViewController<AAInfographicsView
         if model.index != -1 {
             let a =  Double((Int(UIScreen.main.bounds.width)-35-24))/Double(model.recordDataInfoArray[i].powerCurve.count-1)
 
-//            let a =  Double((Int(UIScreen.main.bounds.width)-35-15))/Double(model.recordDataInfoArray[i].powerCurve.count-1)
             model.plotX = Double(model.index) * a
             Logger.debug("aaaaaaa: \(a)  plotX: \(model.plotX) index: \(model.index)")
             
@@ -290,8 +292,7 @@ extension AAInfographicsViewController: AAChartViewDelegate {
       
       //curvelineView 所在view 与曲线所在view 不是同一个
       //curvelineView 的起点是plotX，它的原点是curvelineView 所在view的原点，曲线所在view的原点是横坐标为0的点
-//      model.plotX = (moveOverEventMessage.offset!["plotX"] as? Double)! + 65
-      model.plotX = (moveOverEventMessage.offset!["plotX"] as? Double)!
+      model.plotX = (moveOverEventMessage.offset!["plotX"] as? Double)! + 7
       model.index = moveOverEventMessage.index!
       print("🔥selected point series element name: \(moveOverEventMessage.name ?? "")   \(model.plotX)")
 

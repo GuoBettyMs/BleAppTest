@@ -387,6 +387,8 @@
 		CE54D4BBB2DDD4DB9642DC07A0A31907 /* AAInfographics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8770939C8956AC425A8078F99EE5422C /* AAInfographics-dummy.m */; };
 		CE631DD2C65A0AC87BF04CC314161098 /* Deferred.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616BC58B7C5CEB431EE2C2E594D269C8 /* Deferred.swift */; };
 		CEBFFEED65D877702B2F36102528CF6D /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0054349D32382E801407D27172EF66 /* EventMonitor.swift */; };
+		CFFB794028B47A2400A1FD3D /* AAAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB793F28B47A2400A1FD3D /* AAAxis.swift */; };
+		CFFB794428B47B7600A1FD3D /* AAStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB794328B47B7600A1FD3D /* AAStyle.swift */; };
 		D0B012C0315E3554818F2D292C615C0A /* RxSearchBarDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB7979C3DA28A6489C1EDCE0F0F3E0F /* RxSearchBarDelegateProxy.swift */; };
 		D0B5086222BA927B581C1F42C7FD6DA1 /* DispatchQueueConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898DF2E0730C11A59BBB9EC017EE9CA /* DispatchQueueConfiguration.swift */; };
 		D0CCD4E61CFEB51C96F8FC93D61760A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBE00646A514365F86456896C595115 /* Foundation.framework */; };
@@ -890,7 +892,7 @@
 		9AE4D79653D3C6F02C3C416FABFFF9C0 /* SynchronizedDisposeType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedDisposeType.swift; path = RxSwift/Concurrency/SynchronizedDisposeType.swift; sourceTree = "<group>"; };
 		9B4B100D074419DF9110B49DCE8A1216 /* AASeriesElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AASeriesElement.swift; path = AAInfographics/AAChartCreator/AASeriesElement.swift; sourceTree = "<group>"; };
 		9CB067A67707444906C3212B4C494EC0 /* ObservableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableType.swift; path = RxSwift/ObservableType.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E08B77615EEEB5FE7CAA2C77AA2718B /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		9E4FAB13BC762F29C65110A5B0CEDEAD /* Bag+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bag+Rx.swift"; path = "RxSwift/Extensions/Bag+Rx.swift"; sourceTree = "<group>"; };
 		9E6886696F70E57406E89F8BD61276E3 /* ShareReplayScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShareReplayScope.swift; path = RxSwift/Observables/ShareReplayScope.swift; sourceTree = "<group>"; };
@@ -996,6 +998,8 @@
 		CF152A8C29BA409821079FE1DE65DC32 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
 		CF3C71ADDF1D6733E59AFC8BDFC274B6 /* Debounce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debounce.swift; path = RxSwift/Observables/Debounce.swift; sourceTree = "<group>"; };
 		CFFAE33BF1352B22BE85426D18D7FB74 /* SerialDispatchQueueScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerialDispatchQueueScheduler.swift; path = RxSwift/Schedulers/SerialDispatchQueueScheduler.swift; sourceTree = "<group>"; };
+		CFFB793F28B47A2400A1FD3D /* AAAxis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAAxis.swift; sourceTree = "<group>"; };
+		CFFB794328B47B7600A1FD3D /* AAStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAStyle.swift; sourceTree = "<group>"; };
 		D132B053A5B80BDB5FAA258D4D13EBBE /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		D1411043E155779A5A2BA34634332668 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		D1C1EFE7B210DD043CF6AEEB0907BC54 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
@@ -1345,7 +1349,6 @@
 				BB958687733CEC1D17C4FC4C4CB02BCD /* Validation.swift */,
 				D7E6F0E9253BDCEFA7F46D009BF0D3EA /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1355,7 +1358,6 @@
 				1EC161C31CE4583BDF5C9AD2073F03E1 /* Base */,
 				28C2C2042DA7F25F729DE7B17033CAA6 /* Support Files */,
 			);
-			name = NVActivityIndicatorView;
 			path = NVActivityIndicatorView;
 			sourceTree = "<group>";
 		};
@@ -1423,7 +1425,6 @@
 				E4072FD0B754C707D7947F1C80C9DBA9 /* UILayoutSupport+Extensions.swift */,
 				F69F46902CADE268AA3F232A2AA65B20 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -1466,7 +1467,6 @@
 				B62B802502AB4F945AC8D4027031A6FF /* Utils.swift */,
 				4FB906B5A5402FB0B0B13D5224AA1D0A /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -1493,7 +1493,6 @@
 				E2E8E52F5B0DFB78E39EBD855C805E92 /* SwiftyJSON.swift */,
 				1BFCFC16019C42D1D10B12D490F84A3A /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -1652,7 +1651,6 @@
 				5FFE55C466155F8B56D485D68E9825E9 /* Zip+Collection.swift */,
 				68B87BDB77CDF047BC81BD5143620D01 /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -1660,6 +1658,7 @@
 			isa = PBXGroup;
 			children = (
 				3A8B3B66C54194D2E2398BA54FD2292E /* AAAnimation.swift */,
+				CFFB793F28B47A2400A1FD3D /* AAAxis.swift */,
 				DAC7ED1A8B57A2026D0C6A470A758003 /* AAChart.swift */,
 				3A9DAF6939BE3D0CA3E8272EDB0FF872 /* AAChartModel.swift */,
 				F3CB1BCD44D37E66414A35654D59A427 /* AAChartView.swift */,
@@ -1684,6 +1683,7 @@
 				A19ACEE715FB43899E1B69231AD8A165 /* AASeries.swift */,
 				9B4B100D074419DF9110B49DCE8A1216 /* AASeriesElement.swift */,
 				58DDA64EF8A93DEE05D042B621223D88 /* AAStates.swift */,
+				CFFB794328B47B7600A1FD3D /* AAStyle.swift */,
 				45ECD07440AE5DCFB5CFE5DC31BBA860 /* AASubtitle.swift */,
 				2765EA46359CDCCE73A18D94C2BFA52D /* AATitle.swift */,
 				BF5DCDDB8E00E2BF71FD3789197D86D1 /* AATooltip.swift */,
@@ -1693,7 +1693,6 @@
 				12DC1BE7AEBEC28A3241000E33BA5707 /* Resources */,
 				DD1B59134070952D0E186BFD69049008 /* Support Files */,
 			);
-			name = AAInfographics;
 			path = AAInfographics;
 			sourceTree = "<group>";
 		};
@@ -1759,7 +1758,6 @@
 				A9507DBB427F907532774321C133EB4A /* standard */,
 				E5CD101EB4C23F76E5A9D5F0DE17D7F8 /* Support Files */,
 			);
-			name = SQLite.swift;
 			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
@@ -1902,7 +1900,6 @@
 				1FAAABED9FD04647FA9C4731B439F037 /* WKWebView+Rx.swift */,
 				6C8E4DAAF5ABDDD83E46F2F0E8E5E0F3 /* Support Files */,
 			);
-			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -2604,12 +2601,14 @@
 				816C8CF4D3EC4B1AE507FFC01D71B269 /* AAPlotLinesElement.swift in Sources */,
 				B05F612AA20007EC77E323CCA8E17505 /* AAPlotOptions.swift in Sources */,
 				E3CB7C3F7A71E958FDE29F5605B55EB4 /* AAScrollablePlotArea.swift in Sources */,
+				CFFB794028B47A2400A1FD3D /* AAAxis.swift in Sources */,
 				365658EEB2B651BE201D0B7D55DF0AB5 /* AASerializable.swift in Sources */,
 				03C2FE20A83E05CCA11F66311450CCF6 /* AASeries.swift in Sources */,
 				3286201F64BFEF35F46B85A19A6719A9 /* AASeriesElement.swift in Sources */,
 				EC5F3A0B174BDDC4B1332CA60CCB0AEC /* AAStates.swift in Sources */,
 				2B30F68F5AD32932BB16496BC806244E /* AASubtitle.swift in Sources */,
 				492EC6809C485690586D0B05F29B11DA /* AATitle.swift in Sources */,
+				CFFB794428B47B7600A1FD3D /* AAStyle.swift in Sources */,
 				765E9E023A1129069D3DFE32A2BB0456 /* AATooltip.swift in Sources */,
 				2CA5501F832D298B8D987BA1BC08C2CC /* AAXAxis.swift in Sources */,
 				1D0C48ACD9C4C0CF9CF4F2A688784AA7 /* AAYAxis.swift in Sources */,

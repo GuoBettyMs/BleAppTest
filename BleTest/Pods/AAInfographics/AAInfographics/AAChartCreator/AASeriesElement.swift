@@ -22,7 +22,7 @@
  * -------------------------------------------------------------------------------
  * And if you want to contribute for this project, please contact me as well
  * GitHub        : https://github.com/AAChartModel
- * StackOverflow : https://stackoverflow.com/users/7842508/codeforu
+ * StackOverflow : https://stackoverflow.com/users/12302132/codeforu
  * JianShu       : https://www.jianshu.com/u/f1e6753d4254
  * SegmentFault  : https://segmentfault.com/u/huanghunbieguan
  *
@@ -30,14 +30,20 @@
  
  */
 
- public class AASeriesElement: AAObject {
+public class AASeriesElement: AAObject {
     public var type: String?               //A chart type series. If the type option is not specified, it is inherited from `chart.type`.
     public var name: String?               //The name of the series as shown in the legend, tooltip etc.
     public var data: [Any]?                //An array of data points for the series
     public var color: Any?                 //The main color or the series. In line type series it applies to the line and the point markers unless otherwise specified. In bar type series it applies to the bars unless a color is specified per point. The default value is pulled from the options.colors array.
+    public var colors: [Any]?
     public var lineWidth: Float?           //The line width, It is only valid for line, spline, area, areaspline, arearange and arearangespline chart types
-    public var borderWidth: Float?         //The border width, It is only valid for column, bar, pie, columnrange, pyramid and funnel chart types
     public var borderColor: String?        //The border color, It is only valid for column, bar, pie, columnrange, pyramid and funnel chart types
+    public var borderWidth: Float?         //The border width, It is only valid for column, bar, pie, columnrange, pyramid and funnel chart types
+    public var borderRadius: Float?        //The corner radius of the border surrounding each column or bar.
+    public var borderRadiusTopLeft: Any?
+    public var borderRadiusTopRight: Any?
+    public var borderRadiusBottomLeft: Any?
+    public var borderRadiusBottomRight: Any?
     public var fillColor: Any?             //The fill color, It is only valid for area, areaspline, arearange and arearangespline chart types
     public var fillOpacity: Float?         //The fill opacity, It is only valid for area, areaspline, arearange and arearangespline chart types. Note that when you set an explicit fillColor, the fillOpacity is not applied. Instead, you should define the opacity in the fillColor with an rgba color definition. Deafualt value：0.75.
     public var threshold: Float?           //The threshold, also called zero level or base level. For line type series this is only used in conjunction with negativeColor. default：0.
@@ -90,14 +96,44 @@
     }
     
     @discardableResult
-    public func borderWidth(_ prop: Float) -> AASeriesElement {
-        borderWidth = prop
+    public func borderColor(_ prop: String) -> AASeriesElement {
+        borderColor = prop
         return self
     }
     
     @discardableResult
-    public func borderColor(_ prop: String) -> AASeriesElement {
-        borderColor = prop
+    public func borderWidth(_ prop: Float) -> AASeriesElement {
+        borderWidth = prop
+        return self
+    }
+        
+    @discardableResult
+    public func borderRadius(_ prop: Float) -> AASeriesElement {
+        borderRadius = prop
+        return self
+    }
+    
+    @discardableResult
+    public func borderRadiusTopLeft(_ prop: Any) -> AASeriesElement {
+        borderRadiusTopLeft = prop
+        return self
+    }
+    
+    @discardableResult
+    public func borderRadiusTopRight(_ prop: Any) -> AASeriesElement {
+        borderRadiusTopRight = prop
+        return self
+    }
+    
+    @discardableResult
+    public func borderRadiusBottomLeft(_ prop: Any) -> AASeriesElement {
+        borderRadiusBottomLeft = prop
+        return self
+    }
+    
+    @discardableResult
+    public func borderRadiusBottomRight(_ prop: Any) -> AASeriesElement {
+        borderRadiusBottomRight = prop
         return self
     }
     
@@ -110,6 +146,12 @@
     @discardableResult
     public func color(_ prop: Any) -> AASeriesElement {
         color = prop
+        return self
+    }
+    
+    @discardableResult
+    public func colors(_ prop: [Any]) -> AASeriesElement {
+        colors = prop
         return self
     }
     
@@ -208,7 +250,7 @@
         minSize = prop
         return self
     }
-        
+    
     @discardableResult
     public func shadow(_ prop: AAShadow) -> AASeriesElement {
         shadow = prop
@@ -234,10 +276,10 @@
     }
     
     @discardableResult
-     public func tooltip(_ prop: AATooltip) -> AASeriesElement {
-         tooltip = prop
-         return self
-     }
+    public func tooltip(_ prop: AATooltip) -> AASeriesElement {
+        tooltip = prop
+        return self
+    }
     
     @discardableResult
     public func pointPlacement(_ prop: Any) -> AASeriesElement {
@@ -262,9 +304,9 @@
         reversed = prop
         return self
     }
-
+    
     public  override init() {
-    }   
+    }
 }
 
 public class AADataElement: AAObject {
@@ -360,7 +402,8 @@ public class AAShadow: AAObject {
 
 public class AAZonesElement: AAObject {
     public var value: Double?
-    public var color: String?
+    public var color: Any?
+    public var fillColor: Any?
     public var dashStyle: String?
 
     @discardableResult
@@ -370,8 +413,14 @@ public class AAZonesElement: AAObject {
     }
     
     @discardableResult
-    public func color(_ prop: String) -> AAZonesElement {
+    public func color(_ prop: Any) -> AAZonesElement {
         color = prop
+        return self
+    }
+    
+    @discardableResult
+    public func fillColor(_ prop: Any) -> AAZonesElement {
+        fillColor = prop
         return self
     }
     

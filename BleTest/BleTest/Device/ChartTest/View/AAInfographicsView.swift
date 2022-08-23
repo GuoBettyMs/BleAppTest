@@ -207,7 +207,7 @@ class AAInfographicsView: UIView {
             make.edges.equalToSuperview()
         }
         
-        chartModel.chartType(.spline)
+        chartModel.chartType(.spline)           //图标类型
             .animationDuration(0)
             .markerSymbolStyle(.innerBlank)
             .backgroundColor("#f2f2f2")
